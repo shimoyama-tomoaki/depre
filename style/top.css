@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: YuGothic,"Yugothic",sans-serif;
+}
+
+h1,h2,h3,h4,p,ul,li {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+a {
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+/*===========================
+ * header
+ * ========================*/
+.header__inner {
+  height: 70px; 
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+}
+
+
+/*===========================
+ * share 
+ * ========================*/
+
+.share__list {
+  float: right;
+}
+
+.share__item {
+  margin-left: 15px;
+  float: left;
+  list-style: none;
+}
+
+
+/*===========================
+ * hero 
+ * ========================*/
+.hero {
+  width: 100%;
+}
+
+.hero__inner {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 650px;
+}
+
+.hero__inner img {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__second {
+  padding-top: 160px;
+  font-size: 100px;
+  font-weight: normal;
+  line-height: 1;
+  font-family: 'Josefin Sans', sans-serif; 
+}
+
+.hero__count {
+  padding-top: 60px;
+  font-size: 36px;
+  font-family: 'Josefin Sans', sans-serif; 
+
+}
+
+.hero__second,
+.hero__count {
+  text-align: center;
+  color: #fff;
+}
+
+.hero__logo {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+
+
+/*===========================
+ * nav 
+ * ========================*/
+.nav {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.nav__list {
+  display: flex;
+  width: 840px;
+  margin: 25px auto;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+
+/*===========================
+ * about 
+ * ========================*/
+._about__head {
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+._about__body {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._about__body img {
+  margin: 0 auto;
+}
+
+._about__lead {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
