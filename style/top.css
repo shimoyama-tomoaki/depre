@@ -157,6 +157,23 @@ a:hover {
   line-height: 1.75;
 }
 
+@media (max-width: 770px) {
+  ._about__head {
+    font-size: 18px;
+  }
+
+  ._about__body {
+    flex-direction: column;
+  }
+
+  ._about__body img {
+    margin-top: 50px;
+  }
+
+  ._about__lead {
+  }
+}
+
 
 
 /*===========================
@@ -273,6 +290,11 @@ textarea {
   background-color: #e7e7e7;
 }
 
+@media (max-width: 980px) {
+  ._contact [class*="col--sm"]:first-child {
+    text-align: center;
+  }
+}
 
 
 /*===========================
