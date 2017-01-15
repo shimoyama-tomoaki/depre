@@ -40,21 +40,63 @@ a:hover {
  * ========================*/
 .header__inner {
   height: 70px;
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
+  padding: 20px;
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 
-.header__logo {
+@media (max-width: 770px) {
+  header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .header__inner {
+    height: 40px;
+    padding: 0 10px;
+    background-color: #fff;
+  }
+
+  .header__logo img {
+    width: 50px;
+    vertical-align: middle;
+  }
 }
+
+
+
+/*===========================
+ * header--sm
+ * ========================*/
+.header--sm {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  .header--sm {
+    display: block;
+  }
+
+  .header--sm__menu {
+    display: none;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+  }
+}
+
 
 
 /*===========================
  * share
  * ========================*/
-
 .share__list {
   float: right;
 }
@@ -63,6 +105,26 @@ a:hover {
   margin-left: 15px;
   float: left;
   list-style: none;
+}
+
+@media (max-width: 770px) {
+  .share--sm {
+    display: block !important;
+  }
+
+  .share--sm .share__list {
+    display: inline-block;
+    margin: 10px auto;
+    float: none;
+  }
+
+  .share {
+    display: none;
+  }
+
+  .share__item {
+    margin: 0 5px;
+  }
 }
 
 
@@ -112,6 +174,51 @@ a:hover {
   padding-bottom: 50px;
 }
 
+@media (max-width: 770px) {
+  .hero__inner {
+    position: relative;
+    height: 100vh;
+  }
+
+  .hero__inner * {
+    padding: 0;
+  }
+
+  .hero__second {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 70px;
+  }
+
+  .hero__count {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 28px;
+  }
+
+  .hero__logo {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .hero__icon {
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
 
 
 /*===========================
@@ -129,7 +236,44 @@ a:hover {
   list-style: none;
 }
 
+@media (max-width: 770px) {
+  .nav {
+    display: none;
+  }
+}
 
+
+
+/*===========================
+ * nav--sm
+ * ========================*/
+.nav__sm {
+  display: block;
+}
+
+@media (max-width: 770px) {
+  .nav--sm {
+    position: relative;
+    display: block;
+    z-index: 2;
+    border: none;
+  }
+
+  .nav__list--sm {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav__list--sm .nav__item {
+    padding: 10px 0;
+    border-top: 1px solid #e7e7e7;
+  }
+
+  .nav__list--sm .nav__item:last-child {
+    border-bottom: 1px solid #e7e7e7;
+  }
+}
 
 /*===========================
  * about
@@ -164,13 +308,13 @@ a:hover {
 
   ._about__body {
     flex-direction: column;
+    padding-top: 40px;
   }
 
   ._about__body img {
-    margin-top: 50px;
-  }
-
-  ._about__lead {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
   }
 }
 
@@ -213,6 +357,26 @@ a:hover {
   font-weight: bold;
 }
 
+@media (max-width: 770px) {
+  ._news__body {
+    margin-top: 20px;
+  }
+
+  ._news__item {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.75;
+  }
+
+  ._news__item:last-child {
+    margin-bottom: 15px;
+  }
+
+  ._news__date {
+    margin-right: 20px;
+  }
+}
+
 
 
 /*===========================
@@ -238,6 +402,12 @@ a:hover {
 ._column__date {
   margin-top: 10px;
   float: right;
+}
+
+@media (max-width: 770px) {
+  ._column__body {
+    margin-top: 20px;
+  }
 }
 
 
@@ -294,6 +464,10 @@ textarea {
   ._contact [class*="col--sm"]:first-child {
     text-align: center;
   }
+
+  ._contact [class*="col--sm"]:last-child {
+    margin-top: 40px;
+  }
 }
 
 
@@ -338,4 +512,31 @@ footer {
   color: #fff;
   font-size: 12px;
   text-align: center;
+}
+
+@media (max-width: 770px) {
+  footer {
+    margin-top: 40px;
+  }
+
+  .footer__list {
+    float: none;
+    margin: 0 0 40px;
+    padding: 40px 15px 0 15px;
+  }
+
+  .footer__item {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .footer__logo {
+    margin-top: 0;
+    right: 15px;
+  }
+
+  .footer__copy {
+    font-size: 11px;
+    padding-bottom: 40px;
+  }
 }
