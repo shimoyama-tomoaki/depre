@@ -79,6 +79,10 @@ a:hover {
   display: none;
 }
 
+.header--sm__menu {
+  display: none;
+}
+
 @media (max-width: 770px) {
   .header--sm {
     display: block;
