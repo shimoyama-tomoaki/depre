@@ -1,0 +1,23 @@
+{
+  "name": "depre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --proxy --files='**/*.*' --no-notify --no-open --no-ghost-mode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimoyama-tomoaki/depre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shimoyama-tomoaki/depre/issues"
+  },
+  "homepage": "https://github.com/shimoyama-tomoaki/depre#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.6"
+  }
+}
