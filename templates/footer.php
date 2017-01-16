@@ -10,7 +10,7 @@
       </ul>
       <h2 class="footer__logo">
         <a href="#">
-          <img src="images/footer_logo.png" width="138" height="46" alt="">
+          <img src="/images/footer_logo.png" width="138" height="46" alt="">
         </a>
       </h2>
     </div>

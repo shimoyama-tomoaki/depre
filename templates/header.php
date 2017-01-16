@@ -1,7 +1,7 @@
 
   <header>
     <div class="header__inner">
-      <h1 class="header__logo"><a href="#"><img src="/images/logo.png" width="100" height="33" alt=""></a></h1>
+      <h1 class="header__logo"><a href="/"><img src="/images/logo.png" width="100" height="33" alt=""></a></h1>
       <div class="header__share share">
         <ul class="share__list">
           <li class="share__item"><a href="#"><img src="/common/images/header/twitter_icon.jpg" width="23" height="23" alt=""></a></li>
