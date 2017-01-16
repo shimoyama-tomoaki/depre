@@ -44,19 +44,11 @@ body.is-sp-menu-show {
 }
 
 a {
-  -webkit-transition-property: color, background;
-  -webkit-transition-duration: 180ms;
-  -webkit-transition-timing-function: ease-out;
-  transition-property: color, background;
-  transition-duration: 180ms;
-  transition-timing-function: ease-out;
   color: #333;
-  text-decoration: underline;
 }
 
 a:hover {
   color: #999;
-  text-decoration: none;
 }
 
 a:focus {
