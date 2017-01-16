@@ -97,6 +97,40 @@ h6 {
   /* TODO */
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: YuGothic,"Yugothic",sans-serif;
+}
+
+h1,h2,h3,h4,p,ul,li {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 ::selection {
   background-color: rgba(20, 20, 20, .2);
 }
