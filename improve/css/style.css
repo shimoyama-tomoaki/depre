@@ -1,0 +1,36 @@
+
+/*==============================
+ * _improve
+ * ===========================*/
+._improve__head {
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+._improve .col2__txt:last-child {
+  margin-top: 2em;
+}
+
+
+/*==============================
+ * point
+ * ===========================*/
+._point__bg {
+  background-image: url("../images/improve_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: center center;
+}
+
+._point * {
+  color: #fff;
+}
+
+._point__title {
+  margin: 50px 0 1em;
+}
+
+._point__smhead {
+  margin-top: 30px;
+}
