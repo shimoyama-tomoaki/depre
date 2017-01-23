@@ -1,0 +1,50 @@
+
+/*==============================
+ * nav-list
+ * ===========================*/
+.nav-list--other {
+  margin: 0 auto 25px !important;
+}
+
+._column-list__head {
+  text-align: center;
+}
+
+._column-list__body {
+  margin-top: 80px;
+}
+
+._column-list__heading {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+._column-list__item {
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+._column-list__item:first-child {
+  padding-top: 0;
+}
+
+._column-list__title {
+  font-size: 14px;
+}
+
+._column-list__contents {
+  position: relative;
+  max-width: 740px;
+  margin-left: 20px;
+}
+
+._column-list__txt {
+  margin-top: 20px;
+}
+
+._column-list__date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
