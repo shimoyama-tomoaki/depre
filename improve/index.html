@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../common/css/normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
   <title>improve "Depression" | :Depre</title>
+  <script src="../common/js/smooth-scroll.js"></script>
 </head>
 <body>
 
@@ -37,8 +38,8 @@
           <li class="nav__item"><a href="../what's/"><img src="../images/what’s_nav.png" width="212" height="24" alt=""></a></li>
           <li class="nav__item"><a href="../improve/index.html"><img src="../images/Improve_nav.png" width="240" height="25" alt=""></a></li>
           <li class="nav__item"><a href="../column/index.html"><img src="../images/Column_nav.png" width="79" height="19" alt=""></a></li>
-          <li class="nav__item"><a href="#"><img src="../images/Twitter_nav.png" width="65" height="18" alt=""></a></li>
-          <li class="nav__item"><a href="#"><img src="../images/Contact_nav.png" width="79" height="19" alt=""></a></li>
+          <li class="nav__item"><a href="#twitter" data-scroll><img src="../images/Twitter_nav.png" width="65" height="18" alt=""></a></li>
+          <li class="nav__item"><a href="#contact" data-scroll><img src="../images/Contact_nav.png" width="79" height="19" alt=""></a></li>
         </ul>
       </div>
       <div class="header__share share share--sm">
@@ -56,8 +57,8 @@
       <li class="nav__item"><a href="../what's/index.html"><img src="../images/what’s_nav.png" width="212" height="24" alt=""></a></li>
       <li class="nav__item"><a href="../improve/index.html"><img src="../images/Improve_nav.png" width="240" height="25" alt=""></a></li>
       <li class="nav__item"><a href="../column/index.html"><img src="../images/Column_nav.png" width="79" height="19" alt=""></a></li>
-      <li class="nav__item"><a href="#"><img src="../images/Twitter_nav.png" width="65" height="18" alt=""></a></li>
-      <li class="nav__item"><a href="#"><img src="../images/Contact_nav.png" width="79" height="19" alt=""></a></li>
+      <li class="nav__item"><a href="#twitter" data-scroll><img src="../images/Twitter_nav.png" width="65" height="18" alt=""></a></li>
+      <li class="nav__item"><a href="#contact" data-scroll><img src="../images/Contact_nav.png" width="79" height="19" alt=""></a></li>
     </ul>
   </div>
 
@@ -127,12 +128,12 @@
   <div class="section _contact">
     <div class="container">
       <div class="row row--gutter-80">
-        <div class="col--lg-6 col--md-6 col--sm-12 col--xs-12">
+        <div class="col--lg-6 col--md-6 col--sm-12 col--xs-12" id="twitter" data-scroll>
           <a class="twitter-timeline"  href="https://twitter.com/hashtag/Depre" data-widget-id="818636345157353472">#Depre のツイート</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </div>
 
-        <div class="col--lg-6 col--md-6 col--sm-12 col--xs-12">
+        <div class="col--lg-6 col--md-6 col--sm-12 col--xs-12" id="contact" data-scroll>
           <div class="_contact__header"><img src="../images/Contact_nav.png" width="79" height="19" alt=""></div>
           <div class="_contact__body">
             <p class="_contact__detail">ご意見・ご相談等お受けしております。</p>
@@ -179,5 +180,15 @@
     </div>
     <p class="footer__copy">:Depro　Copyright :Depro CO.,LTD All rights reserved.</p>
   </footer>
+
+  <script>
+    smoothScroll.init({
+      selector: '[data-scroll]',				// スムーススクロールが有効なリンクに付ける属性
+      speed: 500,						// 到達するまでの総時間(ミリ秒)
+      easing: 'easeInOutQuad',			// スピードの種類
+      offset: 80,							// 到達場所からズラすピクセル数
+      callback: function () {}
+    }) ;
+  </script>
 </body>
 </html>
