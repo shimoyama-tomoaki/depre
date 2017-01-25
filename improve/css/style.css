@@ -8,10 +8,6 @@
   font-weight: bold;
 }
 
-._improve .col2__txt:last-child {
-  margin-top: 2em;
-}
-
 
 /*==============================
  * point
@@ -33,4 +29,16 @@
 
 ._point__smhead {
   margin-top: 30px;
+}
+
+._point .col2__txt {
+  margin-top: 1em;
+}
+
+._improve .col2__txt {
+  margin-top: 1em;
+}
+
+._point .col2 {
+  margin-bottom: 0 !important;
 }
